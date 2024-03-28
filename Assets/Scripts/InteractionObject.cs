@@ -7,6 +7,11 @@ public class InteractionObject : MonoBehaviour
 
     public UnityEvent onInteract = new UnityEvent();
 
+    private void OnEnable()
+    {
+        
+    }
+
     public string GetInteractionText()
     {
         return interactionText;
