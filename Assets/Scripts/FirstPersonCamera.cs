@@ -16,11 +16,6 @@ public class FirstPersonCamera : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    private void OnDisable()
-    {
-        Cursor.lockState = CursorLockMode.None;
-    }
-
     private void LateUpdate()
     {
         Quaternion newRotation = Quaternion.Euler(xAxis, yAxis, 0f);
